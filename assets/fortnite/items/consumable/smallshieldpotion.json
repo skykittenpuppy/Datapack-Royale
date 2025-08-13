@@ -1,0 +1,33 @@
+{
+	"model": {
+		"type": "composite",
+		"models": [
+			{
+				"type": "select",
+				"property": "display_context",
+				"fallback": {
+					"type": "model",
+					"model": "minecraft:item/air"
+				},
+				"cases": [
+					{
+						"when": "gui",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "fortnite:gui/rarity/common"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": "model",
+				"model": "fortnite:item/consumable/smallshieldpotion"
+			}
+		]
+	}
+}

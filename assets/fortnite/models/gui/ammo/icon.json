@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "fortnite:gui/ammo/medium_ammo",
+		"icon": "fortnite:gui/ammo/medium_ammo"
+	},
+	"elements": [
+		{
+			"from": [13, -1, 32],
+			"to": [17, 3, 32],
+			"light_emission": 15,
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#icon"}
+			}
+		}
+	],
+	"gui_light": "front"
+}

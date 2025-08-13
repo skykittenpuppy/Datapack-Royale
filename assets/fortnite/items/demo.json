@@ -1,0 +1,258 @@
+{
+	"model": {
+		"type": "composite",
+		"models": [
+			{
+				"type": "composite",
+				"models": [
+					{
+						"type": "select",
+						"property": "custom_model_data",
+						"index": 0,
+						"cases": [
+							{
+								"when": "common",
+								"model": {
+									"type": "condition",
+									"property": "selected",
+									"on_true": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/common_selected"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/common"
+									}
+								}
+							},
+							{
+								"when": "uncommon",
+								"model": {
+									"type": "condition",
+									"property": "selected",
+									"on_true": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/uncommon_selected"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/uncommon"
+									}
+								}
+							},
+							{
+								"when": "rare",
+								"model": {
+									"type": "condition",
+									"property": "selected",
+									"on_true": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/rare_selected"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/rare"
+									}
+								}
+							},
+							{
+								"when": "epic",
+								"model": {
+									"type": "condition",
+									"property": "selected",
+									"on_true": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/epic_selected"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/epic"
+									}
+								}
+							},
+							{
+								"when": "legendary",
+								"model": {
+									"type": "condition",
+									"property": "selected",
+									"on_true": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/legendary_selected"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/legendary"
+									}
+								}
+							},
+							{
+								"when": "mythic",
+								"model": {
+									"type": "condition",
+									"property": "selected",
+									"on_true": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/mythic_selected"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/mythic"
+									}
+								}
+							},
+							{
+								"when": "exotic",
+								"model": {
+									"type": "condition",
+									"property": "selected",
+									"on_true": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/exotic_selected"
+									},
+									"on_false": {
+										"type": "model",
+										"model": "fortnite:gui/rarity/exotic"
+									}
+								}
+							}
+						]
+					},
+					{
+						"type": "select",
+						"property": "custom_model_data",
+						"index": 1,
+						"fallback": {
+							"type": "model",
+							"model": "fortnite:gui/ammo/none"
+						},
+						"cases": [
+							{
+								"when": "light",
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/ammo/light"
+								}
+							},
+							{
+								"when": "medium",
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/ammo/medium"
+								}
+							},
+							{
+								"when": "heavy",
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/ammo/heavy"
+								}
+							},
+							{
+								"when": "shells",
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/ammo/shells"
+								}
+							},
+							{
+								"when": "rockets",
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/ammo/rockets"
+								}
+							},
+							{
+								"when": "energy",
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/ammo/energy"
+								}
+							}
+						]
+					},
+					{
+						"type": "range_dispatch",
+						"property": "custom_model_data",
+						"index": 0,
+						"fallback": {
+							"type": "model",
+							"model": "fortnite:gui/count/0"
+						},
+						"entries": [
+							{
+								"threshold": 0.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/1"
+								}
+							},
+							{
+								"threshold": 1.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/2"
+								}
+							},
+							{
+								"threshold": 2.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/3"
+								}
+							},
+							{
+								"threshold": 3.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/4"
+								}
+							},
+							{
+								"threshold": 4.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/5"
+								}
+							},
+							{
+								"threshold": 5.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/6"
+								}
+							},
+							{
+								"threshold": 6.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/7"
+								}
+							},
+							{
+								"threshold": 7.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/8"
+								}
+							},
+							{
+								"threshold": 8.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/9"
+								}
+							},
+							{
+								"threshold": 998.5,
+								"model": {
+									"type": "model",
+									"model": "fortnite:gui/count/999"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

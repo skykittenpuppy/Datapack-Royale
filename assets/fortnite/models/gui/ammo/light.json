@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "fortnite:gui/ammo/icon",
+	"textures": {
+		"icon": "fortnite:gui/ammo/light_ammo"
+	}
+}

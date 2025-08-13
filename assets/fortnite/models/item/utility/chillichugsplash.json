@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "fortnite:item/utility/chugsplash",
+	"textures": {
+		"texture": "fortnite:item/utility/chillichugsplash"
+	}
+}

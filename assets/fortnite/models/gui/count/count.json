@@ -1,0 +1,38 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "fortnite:gui/count/2",
+		"digit1": "fortnite:gui/count/2",
+		"digit2": "fortnite:gui/count/1",
+		"digit3": "fortnite:gui/count/0"
+	},
+	"elements": [
+		{
+			"from": [10, -1, 32],
+			"to": [13, 3, 32],
+			"light_emission": 15,
+			"faces": {
+				"south": {"uv": [2, 0, 14, 16], "texture": "#digit1"}
+			}
+		},
+		{
+			"from": [7, -1, 32],
+			"to": [10, 3, 32],
+			"light_emission": 15,
+			"faces": {
+				"south": {"uv": [2, 0, 14, 16], "texture": "#digit2"}
+			}
+		},
+		{
+			"from": [4, -1, 32],
+			"to": [7, 3, 32],
+			"light_emission": 15,
+			"faces": {
+				"south": {"uv": [2, 0, 14, 16], "texture": "#digit3"}
+			}
+		}
+	],
+	"gui_light": "front"
+}

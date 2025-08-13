@@ -1,0 +1,47 @@
+{
+	"model": {
+		"type": "composite",
+		"models": [
+			{
+				"type": "select",
+				"property": "display_context",
+				"fallback": {
+					"type": "model",
+					"model": "minecraft:item/air"
+				},
+				"cases": [
+					{
+						"when": "gui",
+						"model": {
+							"type": "composite",
+							"models": [
+								{
+									"type": "model",
+									"model": "fortnite:gui/rarity/common"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"type": "select",
+				"property": "custom_model_data",
+				"index": 0,
+				"fallback": {
+					"type": "model",
+					"model": "fortnite:item/smg/mp5"
+				},
+				"cases": [
+					{
+						"when": ["epic", "legendary", "mythic"],
+						"model": {
+							"type": "model",
+							"model": "fortnite:item/smg/fn-p90"
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "fortnite:gui/rarity/common",
+		"rarity": "fortnite:gui/rarity/common"
+	},
+	"elements": [
+		{
+			"from": [0, 0, -12],
+			"to": [16, 16, -12],
+			"light_emission": 15,
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#rarity"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"scale": [1.25, 1.25, 1.25]
+		}
+	}
+}

@@ -1,0 +1,114 @@
+{
+	"model": {
+		"type": "select",
+		"property": "custom_model_data",
+		"index": 0,
+		"cases": [
+			{
+				"when": "common",
+				"model": {
+					"type": "condition",
+					"property": "selected",
+					"on_true": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/common_selected"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/common"
+					}
+				}
+			},
+			{
+				"when": "uncommon",
+				"model": {
+					"type": "condition",
+					"property": "selected",
+					"on_true": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/uncommon_selected"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/uncommon"
+					}
+				}
+			},
+			{
+				"when": "rare",
+				"model": {
+					"type": "condition",
+					"property": "selected",
+					"on_true": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/rare_selected"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/rare"
+					}
+				}
+			},
+			{
+				"when": "epic",
+				"model": {
+					"type": "condition",
+					"property": "selected",
+					"on_true": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/epic_selected"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/epic"
+					}
+				}
+			},
+			{
+				"when": "legendary",
+				"model": {
+					"type": "condition",
+					"property": "selected",
+					"on_true": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/legendary_selected"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/legendary"
+					}
+				}
+			},
+			{
+				"when": "mythic",
+				"model": {
+					"type": "condition",
+					"property": "selected",
+					"on_true": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/mythic_selected"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/mythic"
+					}
+				}
+			},
+			{
+				"when": "exotic",
+				"model": {
+					"type": "condition",
+					"property": "selected",
+					"on_true": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/exotic_selected"
+					},
+					"on_false": {
+						"type": "model",
+						"model": "fortnite:gui/rarity/exotic"
+					}
+				}
+			}
+		]
+	}
+}
